@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_colorPrimary">#6A6363</color>
+    <color name="app_colorPrimaryDark">#6A6363</color>
+    <color name="app_colorAccent">#FF4081</color>
+
+    <color name="app_red">#FF0000</color>
+    <color name="app_white">#FFFFFF</color>
+    <color name="app_white_f0">#F0F0F0</color>
+    <color name="app_white_trans_33">#33FFFFFF</color>
+    <color name="app_white_trans_99">#99FFFFFF</color>
+    <color name="app_transparent">#00000000</color>
+    <color name="app_transparent_a50">#50000000</color>
+    <color name="app_transparent_a60">#60000000</color>
+
+    <!-- 窗口背景色 -->
+    <color name="app_window_background">#FFFFFF</color>
+
+    <!-- Snackbar 颜色 -->
+    <color name="app_snackbar_tips">#313131</color>
+    <color name="app_snackbar_error">#C03E3E</color>
+
+    <!-- 分隔线颜色 -->
+    <color name="app_divider">#DDDDDD</color>
+
+    <!-- 水波纹颜色 -->
+    <color name="app_default_ripple">#EBEBEB</color>
+    <color name="app_default_ripple_bg">#FFFFFF</color>
+
+    <!-- 标题栏颜色 -->
+    <color name="app_title_bg">#FFFFFF</color>
+    <color name="app_title_text">#0D0D0D</color>
+
+    <!-- 主题色 -->
+    <color name="app_theme">#E03B3C</color>
+    <color name="app_theme_half">#99E03B3C</color>
+
+    <!-- 字体颜色 -->
+    <color name="app_text_normal">#333333</color>
+    <color name="app_text_hint">#999999</color>
+</resources>

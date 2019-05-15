@@ -1,0 +1,82 @@
+// 针对银行端。需要监控所有商铺
+
+{
+	"code": "",
+	"msg": "",
+	"data": {
+	    "merchantList":[
+	        {
+	            "merchantId":"123456",
+	            "merchantName":"商户名",
+	            "stores": [
+                   		    {
+                   				"shopId": 1,
+                   				"shopName": "",
+                   				"shopDesc": "",
+                   				"shopLocation": "东方蓝海",
+                   				"shopType": "",
+                   				"shopStatus": "正常",
+                   				"shopPicUrl": "www.baidu.com",
+                   				"actionType": "动作类型",
+                   				"actionUrl": "跳转链接",
+                   				"openDoorTime": "2019年03月12号 09:18:53",
+                   				"closeDoorTime": "2019年03月12号 09:18:53",
+                   				"managerName":"经理名称",
+                   				"managerPhone":"联系方式"
+                   			},
+                   		    {
+                   				"shopId": 1,
+                   				"shopName": "",
+                   				"shopDesc": "",
+                   				"shopLocation": "东方蓝海",
+                   				"shopType": "",
+                   				"shopStatus": "正常",
+                   				"shopPicUrl": "www.baidu.com",
+                   				"actionType": "动作类型",
+                   				"actionUrl": "跳转链接",
+                   				"openDoorTime": "2019年03月12号 09:18:53",
+                   				"closeDoorTime": "2019年03月12号 09:18:53",
+                   				"managerName":"经理名称",
+                   				"managerPhone":"联系方式"
+                   			}
+                   		]
+	        },
+	        {
+	            "merchantId":"123456",
+	            "merchantName":"商户名",
+	            "stores": [
+                   		    {
+                   				"shopId": 1,
+                   				"shopName": "",
+                   				"shopDesc": "",
+                   				"shopLocation": "东方蓝海",
+                   				"shopType": "",
+                   				"shopStatus": "正常",
+                   				"shopPicUrl": "www.baidu.com",
+                   				"actionType": "动作类型",
+                   				"actionUrl": "跳转链接",
+                   				"openDoorTime": "2019年03月12号 09:18:53",
+                   				"closeDoorTime": "2019年03月12号 09:18:53",
+                   				"managerName":"经理名称",
+                   				"managerPhone":"联系方式"
+                   			},
+                   		    {
+                   				"shopId": 1,
+                   				"shopName": "",
+                   				"shopDesc": "",
+                   				"shopLocation": "东方蓝海",
+                   				"shopType": "",
+                   				"shopStatus": "正常",
+                   				"shopPicUrl": "www.baidu.com",
+                   				"actionType": "动作类型",
+                   				"actionUrl": "跳转链接",
+                   				"openDoorTime": "2019年03月12号 09:18:53",
+                   				"closeDoorTime": "2019年03月12号 09:18:53",
+                   				"managerName":"经理名称",
+                   				"managerPhone":"联系方式"
+                   			}
+                   		]
+	        }
+	    ]
+	}
+}

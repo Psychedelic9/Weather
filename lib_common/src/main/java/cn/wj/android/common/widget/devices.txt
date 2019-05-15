@@ -1,0 +1,66 @@
+{
+	"code": "",
+	"msg": "",
+	"data": {
+	    "storeList":[
+	        {
+	            "storeId":"001",// 门店号
+	            "storeName":"滨湖店"
+	            "merchantId":"123456",// 商户号(存在一个商户号对应多个门店的情况，此时以门店号区分)
+	            "devices": [
+                   		    {
+                   				"deviceId": 1,
+                   				"deviceName": "",
+                   				"deviceLocation": "东方蓝海",
+                   				"deviceType": "收银机",
+                   				"deviceStatus": "正常",
+                   				"devicePicUrl": "www.baidu.com",
+                   				"actionType": "动作类型",
+                   				"actionUrl": "跳转链接",
+                   				"time": "2019年03月12号 09:18:53"
+                   			},
+                   		    {
+                   				"deviceId": 1,
+                   				"deviceName": "",
+                   				"deviceLocation": "东方蓝海",
+                   				"deviceType": "收银机",
+                   				"deviceStatus": "正常",
+                   				"devicePicUrl": "www.baidu.com",
+                   				"actionType": "动作类型",
+                   				"actionUrl": "跳转链接",
+                   				"time": "2019年03月12号 09:18:53"
+                   			}
+                   		]
+	        },
+	        {
+                "storeId":"002",// 门店号
+	            "storeName":"万达店"
+	            "merchantId":"123456",// 商户号
+	            "devices": [
+                   		    {
+                   				"deviceId": 1,
+                   				"deviceName": "",
+                   				"deviceLocation": "东方蓝海",
+                   				"deviceType": "收银机",
+                   				"deviceStatus": "正常",
+                   				"devicePicUrl": "www.baidu.com",
+                   				"actionType": "动作类型",
+                   				"actionUrl": "跳转链接",
+                   				"time": "2019年03月12号 09:18:53"
+                   			},
+                   		    {
+                   				"deviceId": 1,
+                   				"deviceName": "",
+                   				"deviceLocation": "东方蓝海",
+                   				"deviceType": "收银机",
+                   				"deviceStatus": "正常",
+                   				"devicePicUrl": "www.baidu.com",
+                   				"actionType": "动作类型",
+                   				"actionUrl": "跳转链接",
+                   				"time": "2019年03月12号 09:18:53"
+                   			}
+                   		]
+	        }
+	    ]
+	}
+}

@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    resourcePrefix "common_"
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+    }
+
+    sourceSets {
+        main { //           Java             Kotlin
+            java.srcDirs = ['src/main/java', 'src/main/kotlin']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    dataBinding { // DataBinding 开启
+        enabled true
+    }
+}
+
+dependencies {
+
+    /* Kotlin 支持 */
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    /* v7 支持*/
+    implementation "androidx.appcompat:appcompat:${rootProject.ext.dependencies.androidx_appcompat_version}"
+    /* RecyclerView */
+    implementation "androidx.recyclerview:recyclerview:${rootProject.ext.dependencies.androidx_lib_version}"
+    /* Design 支持 */
+    implementation "com.google.android.material:material:${rootProject.ext.dependencies.androidx_lib_version}"
+
+    /* Android Architecture Components 扩展 */
+    implementation "androidx.lifecycle:lifecycle-extensions:${rootProject.ext.dependencies.architecture_components_version}"
+
+    /* Gson */
+    implementation "com.google.code.gson:gson:${rootProject.ext.dependencies.gson_version}"
+
+    /* OkHttp */
+    implementation "com.squareup.okhttp3:okhttp:${rootProject.ext.dependencies.okhttp3_version}"
+
+    /* RxJava2 + RxAndroid2 */
+    implementation "io.reactivex.rxjava2:rxjava:${rootProject.ext.dependencies.rxjava2_version}"
+    implementation "io.reactivex.rxjava2:rxandroid:${rootProject.ext.dependencies.rxandroid2_version}"
+
+    /* Glide */
+    implementation "com.github.bumptech.glide:glide:${rootProject.ext.dependencies.glide_version}"
+}

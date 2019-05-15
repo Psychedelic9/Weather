@@ -1,0 +1,37 @@
+// 近一周的报表统计，按时间顺序，1234567
+{
+	"code": "",
+	"msg": "",
+	"data": {
+	    "lastWeekForms":[
+	        {
+                "totalCount":10,// 交易笔数（笔）
+                "totalAmount":"0.1" // 交易金额（元）
+	        },
+            {
+                "totalCount":10,
+                "totalAmount":"0.1"
+	        },
+	        {
+                "totalCount":10,
+                "totalAmount":"0.1"
+	        },
+            {
+                "totalCount":10,
+                "totalAmount":"0.1"
+	        },
+	        {
+                "totalCount":10,
+                "totalAmount":"0.1"
+	        },
+            {
+                "totalCount":10,
+                "totalAmount":"0.1"
+	        },
+            {
+                "totalCount":10,
+                "totalAmount":"0.1"
+	        }
+	    ]
+	}
+}

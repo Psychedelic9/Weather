@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        flavorDimensions "versionCode"
+
+        testInstrumentationRunner 'androidx.test.ext.junit.runners.AndroidJUnit4'
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding { // DataBinding 开启
+        enabled true
+    }
+
+    packagingOptions {
+        exclude 'META-INF/atomicfu.kotlin_module'
+    }
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation "junit:junit:${rootProject.ext.dependencies.junit_version}"
+    testImplementation "org.mockito:mockito-inline:${rootProject.ext.dependencies.test_mokito}"
+    androidTestImplementation "org.mockito:mockito-android:${rootProject.ext.dependencies.test_mokito}"
+    androidTestImplementation "androidx.test.ext:junit:${rootProject.ext.dependencies.junit_ext_version}"
+    androidTestImplementation "androidx.test:rules:${rootProject.ext.dependencies.test_rules_version}"
+    androidTestImplementation "androidx.test:runner:${rootProject.ext.dependencies.test_runner_version}"
+    androidTestImplementation "androidx.test.espresso:espresso-core:${rootProject.ext.dependencies.test_espresso_version}"
+    androidTestImplementation "androidx.test.uiautomator:uiautomator:${rootProject.ext.dependencies.test_uiautomator_v18}"
+
+    /* Kotlin 支持 */
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    /* Kotlin 协程 */
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${rootProject.ext.dependencies.kotlinx_coroutines}"
+
+    /* Dex 分割 */
+    implementation "androidx.multidex:multidex:${rootProject.ext.dependencies.multidex_version}"
+
+    /* v4 支持 */
+    implementation "androidx.legacy:legacy-support-v4:${rootProject.ext.dependencies.androidx_lib_version}"
+    /* v7 支持*/
+    implementation "androidx.appcompat:appcompat:${rootProject.ext.dependencies.androidx_appcompat_version}"
+    /* RecyclerView */
+    implementation "androidx.recyclerview:recyclerview:${rootProject.ext.dependencies.androidx_lib_version}"
+    /* Design 支持 */
+    implementation "com.google.android.material:material:${rootProject.ext.dependencies.androidx_lib_version}"
+    /* 约束性布局 */
+    implementation "androidx.constraintlayout:constraintlayout:${rootProject.ext.dependencies.constraintlayout_version}"
+
+    /* RxJava2 + RxAndroid2 */
+    implementation "io.reactivex.rxjava2:rxjava:${rootProject.ext.dependencies.rxjava2_version}"
+    implementation "io.reactivex.rxjava2:rxandroid:${rootProject.ext.dependencies.rxandroid2_version}"
+
+    /* OkHttp + Retrofit */
+    implementation "com.squareup.okhttp3:okhttp:${rootProject.ext.dependencies.okhttp3_version}"
+    implementation "com.squareup.retrofit2:retrofit:${rootProject.ext.dependencies.retrofit2_version}"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:${rootProject.ext.dependencies.retrofit2_version}"
+    implementation "com.squareup.retrofit2:converter-gson:${rootProject.ext.dependencies.retrofit2_version}"
+
+    /* Koin */
+    implementation "org.koin:koin-test:${rootProject.ext.dependencies.koin_version}"
+    implementation "org.koin:koin-android:${rootProject.ext.dependencies.koin_version}"
+    implementation "org.koin:koin-android-scope:${rootProject.ext.dependencies.koin_version}"
+    implementation "org.koin:koin-android-viewmodel:${rootProject.ext.dependencies.koin_version}"
+
+    /* Logger */
+    implementation "com.orhanobut:logger:${rootProject.ext.dependencies.logger_version}"
+
+    /* doraemonkit */
+    debugImplementation "com.didichuxing.doraemonkit:doraemonkit:${rootProject.ext.dependencies.doraemonkit}"
+    releaseImplementation "com.didichuxing.doraemonkit:doraemonkit-no-op:${rootProject.ext.dependencies.doraemonkit}"
+    /* Common 库 */
+    implementation project(":lib_common")
+
+}

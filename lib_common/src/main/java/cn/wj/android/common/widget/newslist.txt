@@ -1,0 +1,30 @@
+{
+    "code":"",
+    "msg":"",
+    "data":{
+        "newsList":[
+            {
+                "newsId":1,
+                "newsType":"活动",
+                "source":"新闻来源于今日头条",
+                "title":"新闻test1",
+                "desc":"新闻desc1",
+                "picUrl":"新闻picUrl1",
+                "actionType":"动作类型",比如1-打开网页  2-打开app内部对应界面
+                "actionUrl":"跳转链接",
+                "time":"2019年03月12号 09:18:53"
+            },
+            {
+                "newsId":2,
+                "newsType":"热点",
+                "source":"新闻来源于今日头条",
+                "title":"新闻test2",
+                "desc":"新闻desc2",
+                "picUrl":"新闻picUrl2",
+                "actionType":"动作类型",比如1-打开网页  2-打开app内部对应界面
+                "actionUrl":"跳转链接",
+                "time":"2019年03月12号 09:18:53"
+            }
+        ]
+    }
+}

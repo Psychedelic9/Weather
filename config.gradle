@@ -1,0 +1,131 @@
+ext {
+    // 是否作为 Module 运行
+    isModule = true
+    android = [
+            // 编译 SDK 版本
+            compileSdkVersion: 28,
+            // 最小支持版本
+            minSdkVersion    : 19,
+            // 目标支持版本
+            targetSdkVersion : 23,
+            // 应用版本号
+            versionCode      : 1,
+            // 应用版本名
+            versionName      : "1.0.0"
+    ]
+    dependencies = [
+            // 测试库版本号
+            "junit_version"                  : '4.12',
+            "junit_ext_version"              : '1.1.0',
+            "test_rules_version"             : '1.1.2-alpha02',
+            "test_runner_version"            : '1.1.2-alpha02',
+            "test_espresso_version"          : '3.2.0-alpha02',
+            "test_uiautomator_v18"           : '2.2.0',
+            "test_mokito"                    : '2.27.0',
+
+            // 支持库版本号
+            "support_lib_version"            : '28.0.0',
+            // androidx 支持库版本号
+            "androidx_appcompat_version"     : '1.1.0-alpha04',
+            // androidx 支持库版本号
+            "androidx_lib_version"           : '1.0.0',
+            // KTX 版本
+            "androidx_core_ktx"              : '1.1.0-alpha05',
+            // Kotlin 协程
+            "kotlinx_coroutines"             : '1.2.0',
+
+            // Android Architecture Components 版本号
+            "architecture_components_version": '2.0.0',
+            // Room 数据库版本号
+            "room_version"                   : '2.1.0-alpha03',
+
+            // ARouter 路由
+            "arouter"                        : '1.4.1',
+            "arouter_compiler"               : '1.2.2',
+
+            // Gson 版本号
+            "gson_version"                   : '2.8.5',
+
+            // Dagger2 版本号
+            "dagger2_version"                : '2.21',
+
+            // Koin 版本号
+            "koin_version"                   : '2.0.0-rc-1',
+
+            // 约束性布局版本号
+            "constraintlayout_version"       : '2.0.0-alpha5',
+
+            // Dex 分割版本号
+            "multidex_version"               : '2.0.1',
+            "multidex_instru_version"        : '2.0.0',
+
+            // OkHttp3 版本号
+            "okhttp3_version"                : '3.11.0',
+            // Retrofit2 版本号
+            "retrofit2_version"              : '2.4.0',
+
+            // RxJava2 版本号
+            "rxjava2_version"                : '2.2.2',
+            // RxAndroid2 版本号
+            "rxandroid2_version"             : '2.1.0',
+            // RxKotlin2 版本号
+            "rxkotlin2_version"              : '2.3.0',
+
+            // Glide 版本号
+            "glide_version"                  : '4.9.0',
+
+            // Logger 版本号
+            "logger_version"                 : '2.2.0',
+
+            // 诸葛统计
+            "zhugeio_version"                : '3.3.3',
+
+            // Bugly
+            "bugly_upgrade_version"          : '1.3.5',
+            "bugly_native_version"           : '3.3.1',
+            "bugly_tinker_version"           : '1.9.6',
+
+            // 环信
+            "hyphenate_version"              : '3.5.3',
+
+            // 极光推送
+            "jpush_version"                  : '3.1.8',
+            "jpush_core_version"             : '1.2.6',
+
+            // 微信
+            "wechat_version"                 : '5.1.6',
+
+            // LeakCanary
+            "leakcanary"                     : '1.6.2',
+
+            // Zxing
+            "zxing_version"                  : '3.3.3',
+
+            // 汉字转拼音
+            "tinypinyin_version"             : '2.0.3',
+
+            // RxPermissions 动态权限
+            "rxpermissions_version"          : '0.9.4@aar',
+
+            // Badge View 角标
+            "badge_version"                  : '1.1.3',
+
+            // 桌面角标
+            "shortcutbadger_version"         : '1.1.21@aar',
+
+            // TAB 选择器
+            "flycotablayout_version"         : '2.1.2@aar',
+
+            // 签名板
+            "signature_version"              : '0.2',
+
+            // 侧滑控件
+            "swipelayout_version"            : '1.2.0@aar',
+
+            // 鲁班图片压缩
+            "luban_imgzip_version"           : '1.1.5',
+
+            // 滴滴 doraemonkit
+            "doraemonkit"                    : '1.1.5'
+    ]
+}

@@ -1,0 +1,48 @@
+{
+	"code": "",
+	"msg": "",
+	"data": {
+	    "orderList":[
+	        {
+	            "merchantId":"123456",
+	            "storeId":"123456",
+	            "orders": [
+                   		    {
+                   				"amount": "0.01",
+                   				"cashierId": "收银员id",
+                   				"traceNo": "流水号",
+                   				"time": "交易时间",
+                   				"tradeType": "交易类型"
+                   			},
+                   		    {
+                   				"amount": "0.01",
+                   				"cashierId": "收银员id",
+                   				"traceNo": "流水号",
+                   				"time": "交易时间",
+                   				"tradeType": "交易类型"
+                   			}
+                   		]
+	        },
+            {
+	            "merchantId":"123456",
+	            "storeId":"123456",
+	            "orders": [
+                   		    {
+                   				"amount": "0.01",
+                   				"cashierId": "收银员id",
+                   				"traceNo": "流水号",
+                   				"time": "交易时间",
+                   				"tradeType": "交易类型"
+                   			},
+                   		    {
+                   				"amount": "0.01",
+                   				"cashierId": "收银员id",
+                   				"traceNo": "流水号",
+                   				"time": "交易时间",
+                   				"tradeType": "交易类型"
+                   			}
+                   		]
+	        }
+	    ]
+	}
+}
