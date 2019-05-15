@@ -17,7 +17,7 @@ class WeatherBean {
         var now: NowBean? = null
         var status: String? = null
         var suggestion: SuggestionBean? = null
-        var daily_forecast: ArrayList<DailyForecastBean>? = null
+        lateinit var daily_forecast: ArrayList<DailyForecastBean>
         var hourly_forecast: ArrayList<HourlyForecastBean>? = null
 
         class BasicBean {

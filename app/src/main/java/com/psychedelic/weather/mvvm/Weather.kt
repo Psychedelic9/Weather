@@ -7,7 +7,7 @@ import com.psychedelic.weather.base.mvvm.BaseViewModel
 import com.psychedelic.weather.entity.WeatherBean
 import com.psychedelic.weather.model.WeatherItemModel
 import com.psychedelic.weather.repository.DataRepository
-import java.util.ArrayList
+import kotlin.collections.ArrayList
 
 /**
  *@Author: yiqing
@@ -29,8 +29,10 @@ class WeatherViewMode(private val repository: DataRepository) : BaseViewModel<We
         mDistrictCode = mView!!.getDistrictCode()
         Log.d("Weather", "DistrictId = " + mDistrictCode)
         repository.getWeather(mDistrictCode, {
-            Log.d("onResume", it.HeWeather.toString())
-            mView?.notifyList(it.HeWeather!!)
+            Log.d("onResume", it.HeWeather?.get(0)?.daily_forecast.toString()
+            +" size = "+it.HeWeather?.get(0)?.daily_forecast?.size
+            )
+            mView?.notifyList(it.HeWeather!!.get(0)!!.daily_forecast)
         }, {
 
         })
@@ -51,6 +53,6 @@ class WeatherViewMode(private val repository: DataRepository) : BaseViewModel<We
 }
 
 interface WeatherView : BaseView {
-    fun notifyList(list: ArrayList<WeatherBean.HeWeatherBean>)
+    fun notifyList(list: ArrayList<WeatherBean.HeWeatherBean.DailyForecastBean>)
     fun getDistrictCode(): String
 }

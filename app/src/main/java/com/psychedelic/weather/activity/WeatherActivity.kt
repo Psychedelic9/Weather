@@ -11,9 +11,11 @@ import com.psychedelic.weather.mvvm.WeatherView
 import com.psychedelic.weather.mvvm.WeatherViewMode
 import org.koin.android.ext.android.inject
 import org.koin.android.viewmodel.ext.android.viewModel
-import java.util.ArrayList
+import kotlin.collections.ArrayList
 
 class WeatherActivity : BaseActivity<WeatherViewMode,WeatherView, ActivityWeatherBinding>(),WeatherView {
+
+
     private var mCityCode = ""
     private var mDistrictCode = "110100"
     private val mAdapter: ForecastAdapter by inject()
@@ -32,10 +34,10 @@ class WeatherActivity : BaseActivity<WeatherViewMode,WeatherView, ActivityWeathe
         mBinding.includeForecast.forecastRecycleView.adapter = mAdapter
 
     }
-    override fun notifyList(list: ArrayList<WeatherBean.HeWeatherBean>) {
+
+    override fun notifyList(list: ArrayList<WeatherBean.HeWeatherBean.DailyForecastBean>) {
         mAdapter.refresh(list)
     }
-
     override fun getDistrictCode(): String {
         return mDistrictCode
     }
