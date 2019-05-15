@@ -11,5 +11,5 @@ import com.psychedelic.weather.entity.WeatherBean
  *@ClassName: WeatherItemModel
  */
 interface WeatherItemModel {
-    val onItemClick: (WeatherBean.HeWeatherBean) -> Unit
+    val onItemClick: (WeatherBean.HeWeatherBean.DailyForecastBean) -> Unit
 }

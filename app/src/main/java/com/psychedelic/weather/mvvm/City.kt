@@ -56,7 +56,7 @@ class CityViewMode(private val repository: DataRepository) : BaseViewModel<CityV
         override val onItemClick: (CityEntity) -> Unit = {
             Log.d("onItemClick","点击了"+it.id)
             mCityCode = it.id
-            mView!!.startDistrictSelect(mProvinceCode,mCityCode)
+            mView!!.startDistrictSelect(mProvinceCode,mCityCode,it.name)
         }
 
     }
@@ -65,5 +65,5 @@ class CityViewMode(private val repository: DataRepository) : BaseViewModel<CityV
 interface CityView : BaseView {
     fun notifyList(list: ArrayList<CityEntity>)
     fun getProvinceCode():String
-    fun startDistrictSelect(provinceCode:String,cityCode:String)
+    fun startDistrictSelect(provinceCode:String,cityCode:String,cityName:String)
 }

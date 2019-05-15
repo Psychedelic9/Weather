@@ -6,6 +6,7 @@
         <variable
                 name="model"
                 type="com.psychedelic.weather.mvvm.WeatherViewMode.Model" />
+
     </data>
     <FrameLayout
             android:layout_width="match_parent"
@@ -24,7 +25,9 @@
                 android:layout_height="match_parent">
             <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+
+            >
                 <ScrollView
                         android:id="@+id/weather_layout"
                         android:scrollbars="none"
@@ -37,8 +40,16 @@
                             android:orientation="vertical"
                             android:fitsSystemWindows="true"
                     >
-                    <include layout="@layout/title"/>
-                    <include layout="@layout/now"/>
+                    <include
+                            android:id="@+id/inclue_title"
+                            layout="@layout/title"
+                            app:model="@{model}"
+                    />
+                    <include
+                            layout="@layout/now"
+                            android:id="@+id/include_now"
+                            app:model="@{model}"
+                    />
                     <include
                             android:id="@+id/include_forecast"
                             layout="@layout/forecast"

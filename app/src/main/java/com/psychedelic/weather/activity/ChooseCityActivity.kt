@@ -45,10 +45,11 @@ class ChooseCityActivity : BaseActivity<CityViewMode,CityView, ActivityChooseCit
         return mProvinceCode
     }
 
-    override fun startDistrictSelect(provinceCode: String, cityCode: String) {
+    override fun startDistrictSelect(provinceCode: String, cityCode: String,cityName:String) {
         intent = Intent(instance,ChooseDistrictActivity::class.java)
         intent.putExtra("provinceCode",provinceCode)
         intent.putExtra("cityCode",cityCode)
+        intent.putExtra("cityName",cityName)
         instance.startActivity(intent)
     }
 }

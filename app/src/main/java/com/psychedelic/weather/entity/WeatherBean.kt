@@ -40,13 +40,13 @@ class WeatherBean {
             var hum: String? = null
             var pcpn: String? = null
             var pres: String? = null
-            var tmp: Int = 0
+            var tmp: Int = 30
             var vis: String? = null
             var wind: WindBean? = null
 
             class CondBean {
                 var code: String? = null
-                var txt: String? = null
+                var txt: String = "暴雨"
             }
 
             class WindBean {

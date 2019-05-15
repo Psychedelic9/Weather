@@ -16,10 +16,11 @@ import kotlin.collections.ArrayList
 class WeatherActivity : BaseActivity<WeatherViewMode,WeatherView, ActivityWeatherBinding>(),WeatherView {
 
 
+
     private var mCityCode = ""
     private var mDistrictCode = "110100"
     private val mAdapter: ForecastAdapter by inject()
-
+    private var mCityName = "北京市"
     val instance by lazy { this }
 
     override val mViewModel: WeatherViewMode by viewModel()
@@ -27,6 +28,7 @@ class WeatherActivity : BaseActivity<WeatherViewMode,WeatherView, ActivityWeathe
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_weather)
         mCityCode = instance.intent.getStringExtra("CityCode")
+        mCityName = instance.intent.getStringExtra("CityName")
         mDistrictCode = instance.intent.getStringExtra("DistrictCode")
         mBinding.model = mViewModel.mModel
         mAdapter.mModel= mViewModel.mModel
@@ -40,5 +42,15 @@ class WeatherActivity : BaseActivity<WeatherViewMode,WeatherView, ActivityWeathe
     }
     override fun getDistrictCode(): String {
         return mDistrictCode
+    }
+    override fun setNowWeather(weather: String) {
+
+    }
+
+    override fun setNowTem(tem: String) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+    override fun getCityName(): String {
+        return mCityName
     }
 }

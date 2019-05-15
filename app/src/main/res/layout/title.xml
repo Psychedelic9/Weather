@@ -35,7 +35,7 @@
                 android:gravity="center"
                 android:textColor="@color/app_white"
 
-                android:text="周杰伦市"
+                android:text="@{model.cityName}"
 
         />
         <LinearLayout

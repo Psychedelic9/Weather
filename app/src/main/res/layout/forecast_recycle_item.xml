@@ -23,6 +23,7 @@
                     android:id="@+id/forecast_date_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/app_white"
                     android:text="@string/ex_date"
                     android:textSize="20sp"
             />
@@ -38,6 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/ex_weather"
+                    android:textColor="@color/app_white"
                     android:textSize="20sp"
             />
         </LinearLayout>
@@ -52,6 +54,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/ex_max_tem"
+                    android:textColor="@color/app_white"
                     android:textSize="20sp"
             />
         </LinearLayout>
@@ -66,6 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/ex_min_tem"
+                    android:textColor="@color/app_white"
                     android:textSize="20sp"
             />
         </LinearLayout>

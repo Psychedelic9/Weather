@@ -29,11 +29,13 @@ class ChooseDistrictActivity : BaseActivity<DistrictViewMode, DistrictView, com.
 
     private var mProvinceCode = "110000"//北京
     private var mCityCode = "110100"//北京
+    private var mCityName = "北京市"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_district)
         mProvinceCode = this.intent.getStringExtra("provinceCode")
         mCityCode = this.intent.getStringExtra("cityCode")
+        mCityName = this.intent.getStringExtra("cityName")
         mBinding.model = mViewModel.mModel
         mAdapter.mModel = mViewModel.mModel
         mBinding.chooseDistrictRecycleView.layoutManager = LinearLayoutManager(this)
@@ -54,6 +56,7 @@ class ChooseDistrictActivity : BaseActivity<DistrictViewMode, DistrictView, com.
         intent = Intent(instance,WeatherActivity::class.java)
         intent.putExtra("CityCode",cityCode)
         intent.putExtra("DistrictCode",districtCode)
+        intent.putExtra("CityName",mCityName)
         startActivity(intent)
    }
 }
